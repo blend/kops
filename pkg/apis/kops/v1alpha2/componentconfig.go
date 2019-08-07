@@ -205,6 +205,8 @@ type KubeletConfigSpec struct {
 	ProtectKernelDefaults *bool `json:"protectKernelDefaults,omitempty" flag:"protect-kernel-defaults"`
 	// CgroupDriver allows the explicit setting of the kubelet cgroup driver. If omitted, defaults to cgroupfs.
 	CgroupDriver string `json:"cgroupDriver,omitempty" flag:"cgroup-driver"`
+	//DynamicConfigDir Directory for checkpointing downloaded configurations and tracking configuration health from dynamic configuration change on live kubernetes cluster
+	DynamicConfigDir string `json:"dynamicConfigDir,omitempty" flag:"dynamic-config-dir"`
 }
 
 // KubeProxyConfig defines the configuration for a proxy

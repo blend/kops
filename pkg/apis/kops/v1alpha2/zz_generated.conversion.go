@@ -3710,6 +3710,7 @@ func autoConvert_v1alpha2_KubeletConfigSpec_To_kops_KubeletConfigSpec(in *Kubele
 	out.CpuManagerPolicy = in.CpuManagerPolicy
 	out.RegistryPullQPS = in.RegistryPullQPS
 	out.RegistryBurst = in.RegistryBurst
+	out.DynamicConfigDir = in.DynamicConfigDir
 	return nil
 }
 
@@ -3794,6 +3795,7 @@ func autoConvert_kops_KubeletConfigSpec_To_v1alpha2_KubeletConfigSpec(in *kops.K
 	out.CpuManagerPolicy = in.CpuManagerPolicy
 	out.RegistryPullQPS = in.RegistryPullQPS
 	out.RegistryBurst = in.RegistryBurst
+	out.DynamicConfigDir = in.DynamicConfigDir
 	return nil
 }
 
